@@ -23859,8 +23859,9 @@ class App extends _react.Component {
         // Combine everything and return
         // old input style = rounded-md block w-full text-sm text-gray-700 bg-gray-100 focus:bg-white border-gray-200 focus:border-blue-800 focus:outline-none
         let textInputClasses = "dark:bg-black text-sm text-gray-700 dark:text-gray-100 mt-1 block w-full rounded-md bg-gray-100 focus:bg-white dark:focus:bg-gray-800 border-gray-300 dark:border-gray-700 shadow-sm focus:border-blue-800 dark:focus:border-blue-300 focus:ring focus:ring-blue-800 dark:focus:ring-blue-400 focus:ring-opacity-50";
-        return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+        return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("main", {
             className: "md:h-screen md:flex bg-white dark:bg-black text-gray-700 dark:text-gray-100",
+            "aria-labelledby": "app-title",
             children: [
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                     className: "md:w-2/6 xl:w-1/4 p-4 bg-blue-200 dark:bg-gray-900 shadow-lg overflow-y-auto md:flex md:flex-col",
@@ -23872,6 +23873,7 @@ class App extends _react.Component {
                                 onSubmit: this.searchSubmit,
                                 children: [
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
+                                        id: "app-title",
                                         className: "text-2xl text-gray-700 dark:text-gray-100 font-mono tracking-tighter",
                                         children: _constants.Constants.appName
                                     }, void 0, false, {

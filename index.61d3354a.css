@@ -1522,7 +1522,7 @@ input.custom-toggle:checked ~ .dot {
 }
 
 .facet:hover button.only,
-.facet:focus button.only {
+.facet:focus-within button.only {
   visibility: visible;
 }
 

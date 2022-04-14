@@ -23262,6 +23262,7 @@ class App extends _react.Component {
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
                             className: "only cursor-pointer text-sm ml-2 px-1 hidden lg:inline-block " + linkClass,
+                            "aria-label": `show only ${key} thread results`,
                             onClick: ()=>this.handleThreadsOnly(key)
                             ,
                             children: "only"
@@ -23300,7 +23301,7 @@ class App extends _react.Component {
                             children: "Comment Thread:"
                         }, void 0, false, {
                             fileName: "src/app.tsx",
-                            lineNumber: 494,
+                            lineNumber: 496,
                             columnNumber: 29
                         }, this),
                         " ",
@@ -23308,7 +23309,7 @@ class App extends _react.Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/app.tsx",
-                    lineNumber: 493,
+                    lineNumber: 495,
                     columnNumber: 25
                 }, this);
                 let timeAgo = _timeAgoDefault.default.ago(comment.created_utc * 1000);
@@ -23337,7 +23338,7 @@ class App extends _react.Component {
                                             children: "Comment Author:"
                                         }, void 0, false, {
                                             fileName: "src/app.tsx",
-                                            lineNumber: 514,
+                                            lineNumber: 516,
                                             columnNumber: 33
                                         }, this),
                                         " ",
@@ -23345,7 +23346,7 @@ class App extends _react.Component {
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/app.tsx",
-                                    lineNumber: 510,
+                                    lineNumber: 512,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
@@ -23357,7 +23358,7 @@ class App extends _react.Component {
                                             children: "Comment Score:"
                                         }, void 0, false, {
                                             fileName: "src/app.tsx",
-                                            lineNumber: 518,
+                                            lineNumber: 520,
                                             columnNumber: 33
                                         }, this),
                                         " ",
@@ -23365,13 +23366,13 @@ class App extends _react.Component {
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/app.tsx",
-                                    lineNumber: 516,
+                                    lineNumber: 518,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/app.tsx",
-                            lineNumber: 509,
+                            lineNumber: 511,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
@@ -23391,12 +23392,12 @@ class App extends _react.Component {
                                 unwrapDisallowed: true
                             }, void 0, false, {
                                 fileName: "src/app.tsx",
-                                lineNumber: 524,
+                                lineNumber: 526,
                                 columnNumber: 29
                             }, this)
                         }, void 0, false, {
                             fileName: "src/app.tsx",
-                            lineNumber: 521,
+                            lineNumber: 523,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23413,7 +23414,7 @@ class App extends _react.Component {
                                             children: "Comment Posted:"
                                         }, void 0, false, {
                                             fileName: "src/app.tsx",
-                                            lineNumber: 537,
+                                            lineNumber: 539,
                                             columnNumber: 33
                                         }, this),
                                         " ",
@@ -23421,19 +23422,19 @@ class App extends _react.Component {
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/app.tsx",
-                                    lineNumber: 533,
+                                    lineNumber: 535,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/app.tsx",
-                            lineNumber: 531,
+                            lineNumber: 533,
                             columnNumber: 25
                         }, this)
                     ]
                 }, comment.id, true, {
                     fileName: "src/app.tsx",
-                    lineNumber: 508,
+                    lineNumber: 510,
                     columnNumber: 21
                 }, this));
             });
@@ -23446,7 +23447,7 @@ class App extends _react.Component {
                 children: "Select All"
             }, void 0, false, {
                 fileName: "src/app.tsx",
-                lineNumber: 547,
+                lineNumber: 549,
                 columnNumber: 21
             }, this);
             if (Object.keys(this.state.threadType).length > 1) facets = /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23462,14 +23463,14 @@ class App extends _react.Component {
                                 children: "Threads Filter"
                             }, void 0, false, {
                                 fileName: "src/app.tsx",
-                                lineNumber: 557,
+                                lineNumber: 559,
                                 columnNumber: 29
                             }, this),
                             selectAll
                         ]
                     }, void 0, true, {
                         fileName: "src/app.tsx",
-                        lineNumber: 556,
+                        lineNumber: 558,
                         columnNumber: 25
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("ul", {
@@ -23477,13 +23478,13 @@ class App extends _react.Component {
                         children: threadsFilter
                     }, void 0, false, {
                         fileName: "src/app.tsx",
-                        lineNumber: 561,
+                        lineNumber: 563,
                         columnNumber: 25
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/app.tsx",
-                lineNumber: 555,
+                lineNumber: 557,
                 columnNumber: 21
             }, this);
             content = /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23495,6 +23496,7 @@ class App extends _react.Component {
                         children: [
                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
                                 "aria-live": "polite",
+                                "aria-atomic": "true",
                                 className: "font-bold text-lg text-gray-700 dark:text-gray-100",
                                 children: [
                                     "Showing ",
@@ -23504,7 +23506,7 @@ class App extends _react.Component {
                                 ]
                             }, void 0, true, {
                                 fileName: "src/app.tsx",
-                                lineNumber: 569,
+                                lineNumber: 571,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23528,12 +23530,12 @@ class App extends _react.Component {
                                                     d: "M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
                                                 }, void 0, false, {
                                                     fileName: "src/app.tsx",
-                                                    lineNumber: 579,
+                                                    lineNumber: 582,
                                                     columnNumber: 37
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 577,
+                                                lineNumber: 580,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
@@ -23541,13 +23543,13 @@ class App extends _react.Component {
                                                 children: "Share"
                                             }, void 0, false, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 582,
+                                                lineNumber: 585,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/app.tsx",
-                                        lineNumber: 573,
+                                        lineNumber: 576,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -23568,12 +23570,12 @@ class App extends _react.Component {
                                                     d: "M6 18L18 6M6 6l12 12"
                                                 }, void 0, false, {
                                                     fileName: "src/app.tsx",
-                                                    lineNumber: 590,
+                                                    lineNumber: 593,
                                                     columnNumber: 37
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 588,
+                                                lineNumber: 591,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
@@ -23581,25 +23583,25 @@ class App extends _react.Component {
                                                 children: "Clear"
                                             }, void 0, false, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 593,
+                                                lineNumber: 596,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/app.tsx",
-                                        lineNumber: 584,
+                                        lineNumber: 587,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/app.tsx",
-                                lineNumber: 572,
+                                lineNumber: 575,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/app.tsx",
-                        lineNumber: 568,
+                        lineNumber: 570,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23612,7 +23614,7 @@ class App extends _react.Component {
                                 children: inner
                             }, void 0, false, {
                                 fileName: "src/app.tsx",
-                                lineNumber: 598,
+                                lineNumber: 601,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23620,7 +23622,7 @@ class App extends _react.Component {
                                 children: resultCount > 0 ? `End of Results` : `No Results Found`
                             }, void 0, false, {
                                 fileName: "src/app.tsx",
-                                lineNumber: 601,
+                                lineNumber: 604,
                                 columnNumber: 25
                             }, this),
                             this.state.error && /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23643,12 +23645,12 @@ class App extends _react.Component {
                                                     d: "M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                                                 }, void 0, false, {
                                                     fileName: "src/app.tsx",
-                                                    lineNumber: 611,
+                                                    lineNumber: 614,
                                                     columnNumber: 41
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 609,
+                                                lineNumber: 612,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23659,13 +23661,13 @@ class App extends _react.Component {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 614,
+                                                lineNumber: 617,
                                                 columnNumber: 37
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/app.tsx",
-                                        lineNumber: 608,
+                                        lineNumber: 611,
                                         columnNumber: 33
                                     }, this),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23679,7 +23681,7 @@ class App extends _react.Component {
                                                 children: "Reddit Search"
                                             }, void 0, false, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 617,
+                                                lineNumber: 620,
                                                 columnNumber: 40
                                             }, this),
                                             " is not working/available, then ",
@@ -23688,13 +23690,13 @@ class App extends _react.Component {
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/app.tsx",
-                                        lineNumber: 616,
+                                        lineNumber: 619,
                                         columnNumber: 33
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/app.tsx",
-                                lineNumber: 605,
+                                lineNumber: 608,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23702,19 +23704,19 @@ class App extends _react.Component {
                                 children: infoText
                             }, void 0, false, {
                                 fileName: "src/app.tsx",
-                                lineNumber: 622,
+                                lineNumber: 625,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/app.tsx",
-                        lineNumber: 597,
+                        lineNumber: 600,
                         columnNumber: 21
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/app.tsx",
-                lineNumber: 567,
+                lineNumber: 569,
                 columnNumber: 17
             }, this);
         } else if (this.state.searching) content = /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23726,12 +23728,12 @@ class App extends _react.Component {
                 children: "Searching"
             }, void 0, false, {
                 fileName: "src/app.tsx",
-                lineNumber: 633,
+                lineNumber: 636,
                 columnNumber: 25
             }, this)
         }, void 0, false, {
             fileName: "src/app.tsx",
-            lineNumber: 630,
+            lineNumber: 633,
             columnNumber: 21
         }, this);
         else content = /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23757,12 +23759,12 @@ class App extends _react.Component {
                                     d: "M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                                 }, void 0, false, {
                                     fileName: "src/app.tsx",
-                                    lineNumber: 645,
+                                    lineNumber: 648,
                                     columnNumber: 41
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/app.tsx",
-                                lineNumber: 643,
+                                lineNumber: 646,
                                 columnNumber: 37
                             }, this),
                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23773,13 +23775,13 @@ class App extends _react.Component {
                                 ]
                             }, void 0, true, {
                                 fileName: "src/app.tsx",
-                                lineNumber: 648,
+                                lineNumber: 651,
                                 columnNumber: 37
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/app.tsx",
-                        lineNumber: 640,
+                        lineNumber: 643,
                         columnNumber: 33
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23797,7 +23799,7 @@ class App extends _react.Component {
                                 ]
                             }, void 0, true, {
                                 fileName: "src/app.tsx",
-                                lineNumber: 652,
+                                lineNumber: 655,
                                 columnNumber: 40
                             }, this),
                             " using the ",
@@ -23809,7 +23811,7 @@ class App extends _react.Component {
                                 children: "pushshift.io API"
                             }, void 0, false, {
                                 fileName: "src/app.tsx",
-                                lineNumber: 655,
+                                lineNumber: 658,
                                 columnNumber: 37
                             }, this),
                             ", the same source as ",
@@ -23821,20 +23823,20 @@ class App extends _react.Component {
                                 children: "redditsearch.io"
                             }, void 0, false, {
                                 fileName: "src/app.tsx",
-                                lineNumber: 658,
+                                lineNumber: 661,
                                 columnNumber: 36
                             }, this),
                             "."
                         ]
                     }, void 0, true, {
                         fileName: "src/app.tsx",
-                        lineNumber: 651,
+                        lineNumber: 654,
                         columnNumber: 29
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_help.SearchHelp, {
                     }, void 0, false, {
                         fileName: "src/app.tsx",
-                        lineNumber: 661,
+                        lineNumber: 664,
                         columnNumber: 29
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23842,18 +23844,18 @@ class App extends _react.Component {
                         children: infoText
                     }, void 0, false, {
                         fileName: "src/app.tsx",
-                        lineNumber: 662,
+                        lineNumber: 665,
                         columnNumber: 29
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/app.tsx",
-                lineNumber: 638,
+                lineNumber: 641,
                 columnNumber: 25
             }, this)
         }, void 0, false, {
             fileName: "src/app.tsx",
-            lineNumber: 637,
+            lineNumber: 640,
             columnNumber: 21
         }, this);
         // Combine everything and return
@@ -23878,7 +23880,7 @@ class App extends _react.Component {
                                         children: _constants.Constants.appName
                                     }, void 0, false, {
                                         fileName: "src/app.tsx",
-                                        lineNumber: 678,
+                                        lineNumber: 681,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23890,7 +23892,7 @@ class App extends _react.Component {
                                                 children: "Search"
                                             }, void 0, false, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 681,
+                                                lineNumber: 684,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
@@ -23902,13 +23904,13 @@ class App extends _react.Component {
                                                 ...inputProps
                                             }, void 0, false, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 683,
+                                                lineNumber: 686,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/app.tsx",
-                                        lineNumber: 680,
+                                        lineNumber: 683,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23920,7 +23922,7 @@ class App extends _react.Component {
                                                 children: "Author"
                                             }, void 0, false, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 693,
+                                                lineNumber: 696,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
@@ -23932,13 +23934,13 @@ class App extends _react.Component {
                                                 ...inputProps
                                             }, void 0, false, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 695,
+                                                lineNumber: 698,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/app.tsx",
-                                        lineNumber: 692,
+                                        lineNumber: 695,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23950,7 +23952,7 @@ class App extends _react.Component {
                                                 children: "Time Range"
                                             }, void 0, false, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 705,
+                                                lineNumber: 708,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -23967,7 +23969,7 @@ class App extends _react.Component {
                                                                 children: obj.name
                                                             }, index, false, {
                                                                 fileName: "src/app.tsx",
-                                                                lineNumber: 715,
+                                                                lineNumber: 718,
                                                                 columnNumber: 53
                                                             }, this));
                                                         }),
@@ -23976,24 +23978,24 @@ class App extends _react.Component {
                                                             children: "Custom"
                                                         }, void 0, false, {
                                                             fileName: "src/app.tsx",
-                                                            lineNumber: 719,
+                                                            lineNumber: 722,
                                                             columnNumber: 41
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/app.tsx",
-                                                    lineNumber: 708,
+                                                    lineNumber: 711,
                                                     columnNumber: 37
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 707,
+                                                lineNumber: 710,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/app.tsx",
-                                        lineNumber: 704,
+                                        lineNumber: 707,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -24017,12 +24019,12 @@ class App extends _react.Component {
                                             ]
                                         }, void 0, false, {
                                             fileName: "src/app.tsx",
-                                            lineNumber: 725,
+                                            lineNumber: 728,
                                             columnNumber: 33
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/app.tsx",
-                                        lineNumber: 724,
+                                        lineNumber: 727,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -24037,7 +24039,7 @@ class App extends _react.Component {
                                                         children: "Sort By"
                                                     }, void 0, false, {
                                                         fileName: "src/app.tsx",
-                                                        lineNumber: 738,
+                                                        lineNumber: 741,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -24053,7 +24055,7 @@ class App extends _react.Component {
                                                                     children: "Newest"
                                                                 }, void 0, false, {
                                                                     fileName: "src/app.tsx",
-                                                                    lineNumber: 746,
+                                                                    lineNumber: 749,
                                                                     columnNumber: 45
                                                                 }, this),
                                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
@@ -24061,24 +24063,24 @@ class App extends _react.Component {
                                                                     children: "Oldest"
                                                                 }, void 0, false, {
                                                                     fileName: "src/app.tsx",
-                                                                    lineNumber: 747,
+                                                                    lineNumber: 750,
                                                                     columnNumber: 45
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/app.tsx",
-                                                            lineNumber: 742,
+                                                            lineNumber: 745,
                                                             columnNumber: 41
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "src/app.tsx",
-                                                        lineNumber: 741,
+                                                        lineNumber: 744,
                                                         columnNumber: 37
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 737,
+                                                lineNumber: 740,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -24094,14 +24096,14 @@ class App extends _react.Component {
                                                                 children: "Min"
                                                             }, void 0, false, {
                                                                 fileName: "src/app.tsx",
-                                                                lineNumber: 755,
+                                                                lineNumber: 758,
                                                                 columnNumber: 61
                                                             }, this),
                                                             " Score"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/app.tsx",
-                                                        lineNumber: 753,
+                                                        lineNumber: 756,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
@@ -24114,13 +24116,13 @@ class App extends _react.Component {
                                                         ...inputProps
                                                     }, void 0, false, {
                                                         fileName: "src/app.tsx",
-                                                        lineNumber: 757,
+                                                        lineNumber: 760,
                                                         columnNumber: 37
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 752,
+                                                lineNumber: 755,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -24134,7 +24136,7 @@ class App extends _react.Component {
                                                             children: "Old Reddit"
                                                         }, void 0, false, {
                                                             fileName: "src/app.tsx",
-                                                            lineNumber: 769,
+                                                            lineNumber: 772,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -24148,44 +24150,44 @@ class App extends _react.Component {
                                                                     className: "sr-only custom-toggle"
                                                                 }, void 0, false, {
                                                                     fileName: "src/app.tsx",
-                                                                    lineNumber: 774,
+                                                                    lineNumber: 777,
                                                                     columnNumber: 45
                                                                 }, this),
                                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                                                     className: "w-8 h-3 bg-gray-300 dark:bg-gray-700 rounded-full shadow-inner"
                                                                 }, void 0, false, {
                                                                     fileName: "src/app.tsx",
-                                                                    lineNumber: 776,
+                                                                    lineNumber: 779,
                                                                     columnNumber: 45
                                                                 }, this),
                                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                                                     className: "dot absolute w-5 h-5 bg-white dark:bg-black rounded-full shadow -left-1 -top-1 transition"
                                                                 }, void 0, false, {
                                                                     fileName: "src/app.tsx",
-                                                                    lineNumber: 777,
+                                                                    lineNumber: 780,
                                                                     columnNumber: 45
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/app.tsx",
-                                                            lineNumber: 773,
+                                                            lineNumber: 776,
                                                             columnNumber: 41
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/app.tsx",
-                                                    lineNumber: 768,
+                                                    lineNumber: 771,
                                                     columnNumber: 37
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 767,
+                                                lineNumber: 770,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/app.tsx",
-                                        lineNumber: 735,
+                                        lineNumber: 738,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -24198,42 +24200,42 @@ class App extends _react.Component {
                                                 children: this.state.searching ? "Searching..." : "Search"
                                             }, void 0, false, {
                                                 fileName: "src/app.tsx",
-                                                lineNumber: 787,
+                                                lineNumber: 790,
                                                 columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "src/app.tsx",
-                                            lineNumber: 784,
+                                            lineNumber: 787,
                                             columnNumber: 33
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/app.tsx",
-                                        lineNumber: 783,
+                                        lineNumber: 786,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/app.tsx",
-                                lineNumber: 677,
+                                lineNumber: 680,
                                 columnNumber: 25
                             }, this),
                             facets
                         ]
                     }, void 0, true, {
                         fileName: "src/app.tsx",
-                        lineNumber: 676,
+                        lineNumber: 679,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "src/app.tsx",
-                    lineNumber: 674,
+                    lineNumber: 677,
                     columnNumber: 17
                 }, this),
                 content
             ]
         }, void 0, true, {
             fileName: "src/app.tsx",
-            lineNumber: 673,
+            lineNumber: 676,
             columnNumber: 13
         }, this));
     }
